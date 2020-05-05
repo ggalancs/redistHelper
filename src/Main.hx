@@ -448,7 +448,10 @@ class Main {
 		// Locate haxe tools
 		var haxeTools = ["haxe.exe", "hl.exe", "neko.exe" ];
 		var paths = [];
-		for(path in Sys.getEnv("path").split(";")) {
+		var sysPath = Sys.getEnv("path") ? Sys.getEnv("path") : Sys.getEnv("PATH");
+		var separator = Sys.getEnv("path") ? ";" : ":";
+		//for(path in Sys.getEnv("path").split(";")) {
+		for(path in sysPath.split(separator)) {
 			path = cleanUpDirPath(path);
 			for(f in haxeTools)
 				if( sys.FileSystem.exists(path+f) ) {
