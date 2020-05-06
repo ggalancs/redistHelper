@@ -1,13 +1,13 @@
 {
   "name": "redistHelper",
-  "url" : "https://github.com/deepnight/haxeRedist",
+  "url" : "https://github.com/ggalancs/redistHelper",
   "license": "Apache",
   "tags": ["Heaps","Hashlink","package","redist"],
   "description": "A script to help package a HL/JS/Flash redistribuable from an existing project.",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "classPath": "src/",
-  "releasenote": "Fixed HL 32bits packaging",
-  "contributors": ["sbenard"],
+  "releasenote": "add 'PATH' to linux systems",
+  "contributors": ["sbenard","ggalancs"],
   "dependencies": {
     "deepnightLibs":""
   }
